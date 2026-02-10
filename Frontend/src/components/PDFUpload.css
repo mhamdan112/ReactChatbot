@@ -1,0 +1,50 @@
+.pdf-upload {
+  display: flex;
+  align-items: center;
+}
+
+.upload-area {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: white;
+  border: 2px dashed #667eea;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  color: #667eea;
+  user-select: none;
+}
+
+.upload-area:hover {
+  background: #f5f7ff;
+  border-color: #764ba2;
+  color: #764ba2;
+}
+
+.upload-area.dragging {
+  background: #e8effe;
+  border-color: #764ba2;
+  transform: scale(1.05);
+}
+
+.upload-icon {
+  font-size: 18px;
+}
+
+.upload-text {
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .upload-area {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  .upload-icon {
+    font-size: 16px;
+  }
+}
